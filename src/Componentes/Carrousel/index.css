@@ -1,0 +1,22 @@
+.pres {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+img {
+    border-radius: 1vw;
+}
+
+.texto_main {
+    margin-left: 2vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}

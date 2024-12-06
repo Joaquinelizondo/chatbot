@@ -1,0 +1,126 @@
+/* Contenedor Principal */
+.Main1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Estilos del Carrusel */
+.Main1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: aquamarine;
+  margin-bottom: 20px; /* Espacio entre el carrusel y el chatbot */
+}
+
+/* Flechas de Navegación */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 25%;
+}
+
+.arrow.right {
+  right: 25%;
+}
+
+/* Carrusel */
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Elemento Individual del Carrusel */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.carousel-item h3 {
+  color: #7fffd4;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Media Queries para hacer el carrusel responsive */
+@media (max-width: 768px) {
+  .Main1 {
+      height: 50vh;
+  }
+  .carousel-item h3 {
+      font-size: 1.5rem;
+  }
+  .carousel-item p {
+      font-size: 0.9rem;
+  }
+  .arrow {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Main1 {
+      height: 40vh;
+      padding: 10px;
+  }
+  .carousel-item {
+      padding: 15px;
+  }
+  .carousel-item h3 {
+      font-size: 1.2rem;
+  }
+  .carousel-item p {
+      font-size: 0.8rem;
+  }
+}
+
+/* Estilos para el chatbot */
+df-messenger {
+  margin-top: 20px; /* Espacio entre el carrusel y el chatbot */
+  --df-messenger-font-color: #000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-chat-background: #f3f6fc;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  z-index: 1; /* Asegura que no se superponga a otros elementos */
+}

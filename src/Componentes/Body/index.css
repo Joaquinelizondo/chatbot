@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.root {
+  background-color: black;
+}
+
+.body1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:black;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding-bottom: 7vw;
+}
+
+.body1.appear {
+  opacity: 1;
+}
+
+/* Bloques de información */
+.block {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 8px white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-color: white;
+  color: white;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px white;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: aquamarine;
+  margin-bottom: 10px;
+}
+
+.block h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: WHITE;
+}
+
+/* Estilo del chatbot */
+.df-messenger {
+  --df-messenger-bot-message: #fff;
+  --df-messenger-button-titlebar-color: rgb(255, 123, 0);
+  --df-messenger-chat-background-color: black;
+  --df-messenger-font-color: #333;
+  --df-messenger-send-icon: #ff7b00;
+  z-index: 999;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}

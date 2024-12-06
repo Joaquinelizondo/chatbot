@@ -1,0 +1,68 @@
+.Main2 {
+  background-color: black;
+  display: flex;
+  flex-direction: row; /* Filas por defecto */
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  gap: 2vw; /* Espaciado entre las cajas */
+  flex-wrap: wrap; /* Permitir que las cajas se ajusten en varias filas si es necesario */
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: 0; /* Elimina márgenes para centrar correctamente */
+}
+
+.box1,
+.box2,
+.box3 {
+  display: flex; /* Flexbox para centrar contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border: 2px solid aquamarine;
+  width: 20vw; /* Ancho relativo al viewport */
+  max-width: 300px; /* Limitar el ancho en pantallas grandes */
+  height: 15vw; /* Altura relativa al viewport */
+  max-height: 200px; /* Limitar la altura en pantallas grandes */
+  border-radius: 20px;
+  padding: 20px;
+  background-color: black;
+  text-align: center; /* Centrar el texto */
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 768px) {
+  .Main2 {
+    flex-direction: column; /* Apilar cajas verticalmente */
+    gap: 3vw; /* Ajustar espacio entre cajas */
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 80%; /* Ancho del 80% para pantallas medianas */
+    height: auto; /* Altura ajustada al contenido */
+  }
+
+  h4 {
+    font-size: 1rem; /* Reducir tamaño del texto */
+  }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+  .box1,
+  .box2,
+  .box3 {
+    width: 100%; /* Usar el ancho completo */
+    padding: 10px; /* Reducir padding */
+  }
+
+  h4 {
+    font-size: 0.9rem; /* Reducir tamaño del texto */
+  }
+}

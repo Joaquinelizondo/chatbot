@@ -1,0 +1,57 @@
+/* Estilo general del Footer */
+.footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color de texto */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Cambia a tu fuente preferida */
+  padding-top: 2vw;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+/* Enlaces del footer */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 5px 0;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+/* Social links */
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacio entre cada icono */
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px; /* Tamaño del icono */
+  height: 24px;
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}

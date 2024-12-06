@@ -1,0 +1,40 @@
+/* Estilo del encabezado */
+.header {
+  background-color: transparent; /* Fondo transparente para ver la "suspensión" */
+  color: #000;
+  display: flex;
+  justify-content: center; /* Centra el menú en el encabezado */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Estilo del menú */
+.menu-items {
+  display: flex;
+  gap: 20px; /* Espacio entre cada elemento del menú */
+  background-color: white;
+  border-radius: 20%;
+  
+}
+
+.menu-items h6 {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey; /* Color de letra violeta pastel */
+  background-color: #ffffff; /* Fondo blanco para la "suspensión" */
+  padding: 10px 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 0;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de suspensión */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.menu-items h6:hover {
+  transform: translateY(-4px); /* Efecto de elevación */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte al pasar el cursor */
+}
