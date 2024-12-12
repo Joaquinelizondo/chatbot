@@ -3,7 +3,7 @@ const { Storage } = require('@google-cloud/storage');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Inicializa Google Cloud Storage
 const storage = new Storage({
